@@ -1,0 +1,51 @@
+<RCC>
+    <qresource prefix="/resources" >
+        <file>images/logo128x128.png</file>
+        <file>images/logo128x128e.png</file>
+        <file>images/logo64x64.png</file>
+        <file>images/logo32x32.png</file>
+        <file>images/embeddedbg_text.png</file>
+
+        <file>help/mainwindow.png</file>
+        <file>help/new.png</file>
+        <file>help/books.png</file>
+        <file>help/bookmarks.png</file>
+        <file>help/arrowback.png</file>
+        <file>help/arrowforward.png</file>
+        <file>help/navigation.png</file>
+        <file>help/navigationdr.png</file>
+        <file>help/dailyread.png</file>
+        <file>help/search.png</file>
+        <file>help/bibletexts.png</file>
+        <file>help/audio.png</file>
+        <file>help/zoomin.png</file>
+        <file>help/zoomout.png</file>
+        <file>help/zoomnormal.png</file>
+        <file>help/searchinthetext.png</file>
+        <file>help/casesensitive.png</file>
+        <file>help/wholewords.png</file>
+        <file>help/selectall.png</file>
+        <file>help/copy.png</file>
+        <file>help/save.png</file>
+        <file>help/statistics.png</file>
+        <file>help/pad.png</file>
+        <file>help/dictionary.png</file>
+        <file>help/image.png</file>
+        <file>help/projector.png</file>
+        <file>help/www.png</file>
+        <file>help/settings.png</file>
+        <file>help/help.png</file>
+        <file>help/info.png</file>
+        <file>help/filemenu.png</file>
+        <file>help/session.png</file>
+        <file>help/exit.png</file>
+        <file>help/titlebarbuttons.png</file>
+        <file>help/bookspanel.png</file>
+        <file>help/bookmarkspanel.png</file>
+        <file>help/searchpanelresults.png</file>
+        <file>help/searchpanelfilter.png</file>
+        <file>help/searchpanelmap.png</file>
+        <file>help/projectorpanel.png</file>
+        <file>help/dictionarypanel.png</file>
+    </qresource>
+</RCC>

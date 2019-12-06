@@ -1,0 +1,35 @@
+Bulgarian  English    French     German     Spanish    Russian    Romanian   Polish     Czech      Italian
+--------------------------------------------------------------------------------------------------------------
+Адам       Adam       Adam       Adam       Adan       Адам       Adam       Adam       Adam       Adamo
+Сит        Seth       Seth       Seth       Set        Сиф        Set        Set        Set        Seth
+Енос       Enos       Enos       Enosch     Enos       Енос       Enos       Enos       Enos       Enosh
+Кенан      Cainan     Cainan     Kenan      Cainan     Каинан     Cainan     Kenan      Kenan      Kenan
+Маалалеил  Mahalaleel Malaleel   Mahalaleel Mahalaleel Малелеил   Mahalaleel Mahalaleel Mahalalel  Mahalaleel
+Яред       Jared      Jared      Jared      Jared      Иаред      Iared      Jared      Jared      Jared
+Енох       Enoch      Henoch     Hanoch     Enoc       Енох       Enoh       Enoch      Enoch      Enoc
+Матусал    Methuselah Mathusalem Methusalah Matusalen  Мафусал    Metusala   Matuzalem  Metuzalem  Methushelah
+Ламех      Lamech     Lamech     Lamech     Lamec      Ламех      Lameh      Lamech     Lamech     Lamec
+Ной        Noah       Noe        Noah       Noe        Ной        Noe        Noe        Noe        Noe
+Сим        Shem       Sem        Sem        Sem        Сим        Sem        Sem        Sem        Sem
+Арфаксад   Arphaxad   Arphaxad   Arpakschad Arfaxad    Арфаксад   Arpacsad   Arfachsad  Arpaksad   Arpacshad
+Сала       Salah      Sale       Schelach   Sala       Сала       Selah      Selech     Selach     Scelah
+Евер       Eber       Heber      Eber       Heber      Евер       Eber       Heber      Heber      Eber
+Фалек      Peleg      Phaleg     Peleg      Peleg      Фалек      Peleg      Peleg      Peleg      Peleg
+Рагав      Reu        Reu        Regu       Reu        Рагав      Reu        Rehu       Reu        Reu
+Серух      Serug      Sarug      Serug      Serug      Серух      Serug      Sarug      Serug      Serug
+Нахор      Nahor      Nachor     Nahor      Nacor      Нахор      Nahor      Nachor     Nachor     Nahor
+Тара       Terah      Thare      Terach     Tare       Фарра      Terah      Tare       Terach     Terah
+Авраам     Abraham    Abraham    Abraham    Abraham    Авраам     Avraam     Abraham    Abraham    Abrahamo
+Исмаил     Ishmael    Ismael     Ismael     Ismael     Измаил     Ismael     Ismael     Izmael     Ismaele
+Исаак      Isaac      Isaac      Isaak      Isaac      Исаак      Isaac      Izaak      Izak       Isacco
+Яков       Jacob      Jacob      Jakob      Jacob      Иаков      Iacov      Jakob      Jakob      Giacobbe
+Израел     Israel     Israel     Israel     Israel     Израиль    Israel     Izrael     Izrael     Israele
+Левий      Levi       Levi       Levi       Levi       Левий      Levi       Lewi       Levi       Levi
+Каат       Kohath     Caath      Kahath     Coat       Кааф       Chehat     Kaat       Kehat      Kehath
+Амрам      Amram      Amram      Amram      Amram      Амрам      Amram      Amram      Amram      Amram
+Аарон      Aaron      Aaron      Aaron      Aaron      Аарон      Aaron      Aaron      Aron       Aaronne
+Моисей     Moses      Moise      Mose       Moises     Моисей     Moise      Mojzesz    Mojzis     Mose
+Йосиф      Joseph     Joseph     Joseph     Jose       Иосиф      Iosif      Jozef      Josef      Giuseppe
+Потоп      Flood      Deluge     Sundflut   Diluvio    Потоп      Potop      Potop      Potop      Diluvio
+Египет     Egypt      Egypte     Agypten    Egipto     Египет     Egipt      Egipt      Egypt      Egitto
+--------------------------------------------------------------------------------------------------------------
