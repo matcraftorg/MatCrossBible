@@ -36,7 +36,7 @@
 #include <QDebug>
 
 class MDockWidget;
-class TabList;
+struct TabList;
 class BLabel;
 
 // Клас за реализиране на док-widget.

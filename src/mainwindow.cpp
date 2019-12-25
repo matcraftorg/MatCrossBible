@@ -2743,7 +2743,8 @@ void MainWindow::setTMenuFontSize()
   audioToolBar->setFont(font);
   QFontMetrics fm(font);
   int tbBtnMargins = MO->SVars.otherToolBarFontSize + 2*(5 + MO->SVars.otherToolBarFontSize/3); // Опитът показва, че горният и долният маргин (разстоянието между надписа на бутона и стените му) се изчисляват най-добре по тази формула за да се показват бутоните добре.
-  int lrBtnMargins = 2 * (5 + fm.width(" ")); // Опитът показва, че левият и десният маргин (разстоянието между надписа на бутона и стените му) са равни на 5 точни + широчината на един интервал. Ето защо това разстояние се добавя към дължината на надписа на бутона.
+// стар код:  int lrBtnMargins = 2 * (5 + fm.width(" "));
+  int lrBtnMargins = 2 * (5 + fm.boundingRect(" ").width()); // Опитът показва, че левият и десният маргин (разстоянието между надписа на бутона и стените му) са равни на 5 точни + широчината на един интервал. Ето защо това разстояние се добавя към дължината на надписа на бутона.
   
   tMenu->setToolBarsHeight(tbBtnMargins); // Това ще бъде височината на всички панели.
 
@@ -2754,12 +2755,12 @@ void MainWindow::setTMenuFontSize()
   int panelWidth = 0; // Дължина на панела. Ще се изчисли така, че всички компоненти да се съберат в него.
   for (quint8 i = 0; i < MO->bibleTextList.size(); i++)
   {
-    panelWidth += fm.width(bibleTextBtn[i]->text()) + lrBtnMargins;
+    panelWidth += fm.boundingRect(bibleTextBtn[i]->text()).width() + lrBtnMargins;
   }
-  panelWidth += fm.width(reorderBibleTextsBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(bibleTextsInfoBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(moreBibleTextsBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(convertBibleTextsBtn->text()) + lrBtnMargins;
+  panelWidth += fm.boundingRect(reorderBibleTextsBtn->text()).width() + lrBtnMargins;
+  panelWidth += fm.boundingRect(bibleTextsInfoBtn->text()).width() + lrBtnMargins;
+  panelWidth += fm.boundingRect(moreBibleTextsBtn->text()).width() + lrBtnMargins;
+  panelWidth += fm.boundingRect(convertBibleTextsBtn->text()).width() + lrBtnMargins;
 
   bibleTextsToolBar->resize(panelWidth, tbBtnMargins); // Това ще бъде новият размер на панела. Всички компоненти трябва да се съберат в него.
 
@@ -2768,7 +2769,7 @@ void MainWindow::setTMenuFontSize()
   for (quint8 i = 0; i < 9; i++)
   {
     panelWidth += 17; //saveSessionChBox[i]->width();
-    panelWidth += fm.width(sessionBtn[i]->text()) + lrBtnMargins;
+    panelWidth += fm.boundingRect(sessionBtn[i]->text()).width() + lrBtnMargins;
     panelWidth += 4; // За VSeparator
   }
 

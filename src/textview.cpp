@@ -783,7 +783,7 @@ void TextView::paintEvent(QPaintEvent * event)
 {
   QPainter painter(viewport()); // viewport() is the paintable area and could be whats causing the issue
   QColor rectangleFill;
-  QColor circleFill;
+//  QColor circleFill;
   QRect rectangle;
   
   // Чертае фона:

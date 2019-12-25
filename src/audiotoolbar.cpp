@@ -406,27 +406,27 @@ void AudioToolBar::slotSetToolBarFontSize()
 {
   QFontMetrics fm(this->font());
   int tbBtnMargins = MW->MO->SVars.otherToolBarFontSize + 2*(5 + MW->MO->SVars.otherToolBarFontSize/3); // Опита показва, че горният и долният маргин (разстоянието между надписа на бутона и стените му) се изчисляват най-добре по тази формула за да се показват бутоните добре.
-  int lrBtnMargins = 2 * (5 + fm.width(" ")); // Опита показва, че левият и десният маргин (разстоянието между надписа на бутона и стените му) са равни на 5 точни + широчината на един интервал. Ето защо това разстояние се добавя към дължината на надписа на бутона.
+  int lrBtnMargins = 2 * (5 + fm.horizontalAdvance(" ")); // Опита показва, че левият и десният маргин (разстоянието между надписа на бутона и стените му) са равни на 5 точни + широчината на един интервал. Ето защо това разстояние се добавя към дължината на надписа на бутона.
   int panelWidth = 0; // Дължина на панела. Ще се изчисли така, че всички компоненти да се съберат в него.
 
-  audioLocationComboBox->setMaximumWidth(30 * fm.width("А")); // Това се прави тук защото няма метод setMaximumContentsLength(30).
+  audioLocationComboBox->setMaximumWidth(30 * fm.horizontalAdvance("А")); // Това се прави тук защото няма метод setMaximumContentsLength(30).
 
-  panelWidth += (20 * fm.width("А")); // За audioLocationComboBox - грубо - някаква средна стойност (seekSlider ще обере разликите).
-  panelWidth += fm.width(playChapterBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(playBookBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(playGroupBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(stopBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(pauseBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(repeatBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(synchronizeBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(previousBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(labelInfo->text());
-  panelWidth += fm.width(nextBtn->text()) + lrBtnMargins;
+  panelWidth += (20 * fm.horizontalAdvance("А")); // За audioLocationComboBox - грубо - някаква средна стойност (seekSlider ще обере разликите).
+  panelWidth += fm.horizontalAdvance(playChapterBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(playBookBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(playGroupBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(stopBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(pauseBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(repeatBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(synchronizeBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(previousBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(labelInfo->text());
+  panelWidth += fm.horizontalAdvance(nextBtn->text()) + lrBtnMargins;
   panelWidth += 240; // За seekSlider - грубо. Той ще обере разликите.
-  panelWidth += fm.width("x 1.0") + lrBtnMargins + 10; // За rateComboBox - грубо.
+  panelWidth += fm.horizontalAdvance("x 1.0") + lrBtnMargins + 10; // За rateComboBox - грубо.
   panelWidth += 100; // За volumeSlider.
-  panelWidth += fm.width(editBtn->text()) + lrBtnMargins;
-  panelWidth += fm.width(newBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(editBtn->text()) + lrBtnMargins;
+  panelWidth += fm.horizontalAdvance(newBtn->text()) + lrBtnMargins;
 
   this->resize(panelWidth, tbBtnMargins); // Това ще бъде новият размер на панела. Всички компоненти трябва да се съберат в него.
 }
