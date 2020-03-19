@@ -2,7 +2,7 @@
  *   MatCrossBible  (old name: CrossBgBible)                               *
  *   Copyright (C) 2007-2020 by MatCraft, Bulgaria                         *
  *   matcraft.org@gmail.com                                                *
- *   http://www.matcraft.org/  (old site: http://www.crossbgbible.com/)    *
+ *   https://www.matcraft.org/  (old site: https://www.crossbgbible.com/)  *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -1228,12 +1228,12 @@ void MainObject::loadSVarsSettings()
   //SVars.MatCrossBibleURL = settings.value(QString("MatCrossBibleURL"), "").toString();
   //if (SVars.MatCrossBibleURL == "")
   //{
-    SVars.MatCrossBibleURL = QString("http://www.matcraft.org/MatCrossBible/"); // Да не се изтрива http:// и последната наклонена черта!
+    SVars.MatCrossBibleURL = QString("https://www.matcraft.org/MatCrossBible/"); // Да не се изтрива https:// и последната наклонена черта!
   //  settings.setValue(QString("MatCrossBibleURL"), SVars.MatCrossBibleURL);
   //}
-  //if (!SVars.MatCrossBibleURL.contains(QString("http://"))) SVars.MatCrossBibleURL = QString("http://%1").arg(SVars.MatCrossBibleURL); // Ако не съдържа http:// го добавя.
-  //QUrl mbURL(SVars.MatCrossBibleURL); // Това изчиства линка от http и наклонените черти.
-  //SVars.MatCrossBibleURL = QString("http://%1/").arg(mbURL.host()); // Това ги добавя наново. Добавя и последната наклонена черта, което е цялата идея.
+  //if (!SVars.MatCrossBibleURL.contains(QString("https://"))) SVars.MatCrossBibleURL = QString("https://%1").arg(SVars.MatCrossBibleURL); // Ако не съдържа https:// го добавя.
+  //QUrl mbURL(SVars.MatCrossBibleURL); // Това изчиства линка от https и наклонените черти.
+  //SVars.MatCrossBibleURL = QString("https://%1/").arg(mbURL.host()); // Това ги добавя наново. Добавя и последната наклонена черта, което е цялата идея.
   settings.endGroup();
 }
 
@@ -2464,8 +2464,8 @@ void MainObject::createHTML_MatCrossBible_File_V1(BIBLE_TEXT *targetBibleText, q
 
   allText += QString("<p align=\"center\" style=\"color:%1;\"><small>").arg(SVars.oldTestamentColorF.name());
   allText += QString("  <b>• MatCrossBible.HTML •</b><br />\n");
-  allText += QString("  <a class=\"colorblue\" href=\"http://www.matcraft.org/\">http://www.matcraft.org/</a>\n");
-  allText += QString("</small></p>\n\n");
+  allText += QString("  <a class=\"colorblue\" href=\"https://www.matcraft.org/\">https://www.matcraft.org/</a>\n");
+  allText += QString("</small></p>\n\n");s
 
   allText += QString("</body>\n</html>\n");
 
@@ -2788,7 +2788,7 @@ void MainObject::createHTML_MatCrossBible_File_V2(BIBLE_TEXT *targetBibleText, q
 
   allText += QString("<p align=\"center\" style=\"color:%1;\">\n").arg(SVars.oldTestamentColorF.name());;
   allText += QString("  <b>• MatCrossBible.HTML •</b><br />\n");
-  allText += QString("  <a class=\"color_b1\" href=\"http://www.matcraft.org/\">http://www.matcraft.org/</a>\n");
+  allText += QString("  <a class=\"color_b1\" href=\"https://www.matcraft.org/\">https://www.matcraft.org/</a>\n");
   allText += QString("</p>\n\n");
 
   allText += QString("</body>\n</html>\n");
@@ -2870,7 +2870,7 @@ void MainObject::createHTML_MatCrossBible_Main_File(BIBLE_TEXT *targetBibleText,
 
   allText += QString("<p align=\"center\" style=\"color:%1;\"><small>").arg(SVars.oldTestamentColorF.name());
   allText += QString("  <b>• MatCrossBible.HTML •</b><br />\n");
-  allText += QString("  <a class=\"colorblue\" href=\"http://www.matcraft.org/\">http://www.matcraft.org/</a>\n");
+  allText += QString("  <a class=\"colorblue\" href=\"https://www.matcraft.org/\">https://www.matcraft.org/</a>\n");
   allText += QString("</small></p>\n\n");
 
   allText += QString("</body>\n</html>\n");

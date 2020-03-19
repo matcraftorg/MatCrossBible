@@ -2,7 +2,7 @@
  *   MatCrossBible  (old name: CrossBgBible)                               *
  *   Copyright (C) 2007-2020 by MatCraft, Bulgaria                         *
  *   matcraft.org@gmail.com                                                *
- *   http://www.matcraft.org/  (old site: http://www.crossbgbible.com/)    *
+ *   https://www.matcraft.org/  (old site: https://www.crossbgbible.com/)  *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -236,7 +236,7 @@ void WWWResources::writeNewFile()
 {
   QString text = "\n";
   text += "MatCrossBible\n";
-  text += "http://www.matcraft.org/MatCrossBible/\n";
+  text += "https://www.matcraft.org/MatCrossBible/\n";
   text += "The official website of MatCrossBible\n";
   text += "\n";
   text += "\n";
@@ -286,7 +286,7 @@ void WWWResources::slotInsertBtn()
 {
   URL_DESC ud;
   ud.url = AddURLLineEdit->text();
-  if ( ud.url.count() > 0 && !ud.url.contains(QString("http://")) ) ud.url = QString("http://%1").arg(ud.url);
+  if ( ud.url.count() > 0 && !ud.url.contains(QString("http://")) && !ud.url.contains(QString("https://")) ) ud.url = QString("http://%1").arg(ud.url);
   ud.description = AddDescriptionLineEdit->text();
   UD.insert(InsertComboBox->currentIndex(), (URL_DESC)ud);
   modified = true;
@@ -321,7 +321,7 @@ void WWWResources::slotSaveBtn()
   int i = ChoiceComboBox->currentIndex()-1;
   if (i == -1) return; // Това е излишно, защото бутонът няма да е активен.
   UD[i].url = EditURLLineEdit->text();
-  if ( UD[i].url.count() > 0 && !UD[i].url.contains(QString("http://")) ) UD[i].url = QString("http://%1").arg(UD[i].url);
+  if ( UD[i].url.count() > 0 && !UD[i].url.contains(QString("http://")) && !UD[i].url.contains(QString("https://")) ) UD[i].url = QString("http://%1").arg(UD[i].url);
   UD[i].description = EditDescriptionLineEdit->text();
   modified = true;
   showLinks(true);

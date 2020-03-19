@@ -2,7 +2,7 @@
  *   MatCrossBible  (old name: CrossBgBible)                               *
  *   Copyright (C) 2007-2020 by MatCraft, Bulgaria                         *
  *   matcraft.org@gmail.com                                                *
- *   http://www.matcraft.org/  (old site: http://www.crossbgbible.com/)    *
+ *   https://www.matcraft.org/  (old site: https://www.crossbgbible.com/)  *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -1762,7 +1762,7 @@ void MainWindow::slotHelp_Help()
   text += QString("</table><br /><br />");
 
   text += QString(
-    "<center><a href=\"http://www.matcraft.org/\"><font color=#0080ff>www.matcraft.org</font></a><br />"
+    "<center><a href=\"https://www.matcraft.org/\"><font color=#0080ff>www.matcraft.org</font></a><br />"
     "<a href=\"mailto:matcraft.org@gmail.com\"><font color=#0080ff>matcraft.org@gmail.com</font></a><br />"
     "<br />"
     "<font color=#00aaaa><b>MatCraft</b></font></center></body>"); // b00000 - червен.
@@ -1785,7 +1785,7 @@ void MainWindow::slotHelp_About()
   text += QString("<font color=#00aaaa><big><b><div>%1</div></b></big></font><font color=#00aaaa><div>Ver %2</div></font><br />").arg(QCoreApplication::applicationName()).arg(QCoreApplication::applicationVersion()); // b00000 - червен.
   text += QString("<div>%1</div><div>%2</div><div>%3</div><br /><div>%4</div><br /><br />").arg(MO->TS->AboutMatCrossBible1_v1).arg(MO->TS->AboutMatCrossBible2_v1).arg(MO->TS->AboutMatCrossBible3_v1).arg(MO->TS->AboutMatCrossBible4_v1);
   text += QString(
-    "<a href=\"http://www.matcraft.org/\"><font color=#0080ff>www.matcraft.org</font></a><br>"
+    "<a href=\"https://www.matcraft.org/\"><font color=#0080ff>www.matcraft.org</font></a><br>"
     "<a href=\"mailto:matcraft.org@gmail.com\"><font color=#0080ff>matcraft.org@gmail.com</font></a><br>"
     "<br>"
     "<font color=#00aaaa><b>MatCraft</b></font></center>");

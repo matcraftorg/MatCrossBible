@@ -2,7 +2,7 @@
  *   MatCrossBible  (old name: CrossBgBible)                               *
  *   Copyright (C) 2007-2020 by MatCraft, Bulgaria                         *
  *   matcraft.org@gmail.com                                                *
- *   http://www.matcraft.org/  (old site: http://www.crossbgbible.com/)    *
+ *   https://www.matcraft.org/  (old site: https://www.crossbgbible.com/)  *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -28,7 +28,7 @@
 int main(int argc, char *argv[])
 {
   QCoreApplication::setApplicationName("MatCrossBible");
-  QCoreApplication::setApplicationVersion("3.0.0");
+  QCoreApplication::setApplicationVersion("3.0.1");
 
   //QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
   //QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
