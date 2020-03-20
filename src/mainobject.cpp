@@ -2465,7 +2465,7 @@ void MainObject::createHTML_MatCrossBible_File_V1(BIBLE_TEXT *targetBibleText, q
   allText += QString("<p align=\"center\" style=\"color:%1;\"><small>").arg(SVars.oldTestamentColorF.name());
   allText += QString("  <b>• MatCrossBible.HTML •</b><br />\n");
   allText += QString("  <a class=\"colorblue\" href=\"https://www.matcraft.org/\">https://www.matcraft.org/</a>\n");
-  allText += QString("</small></p>\n\n");s
+  allText += QString("</small></p>\n\n");
 
   allText += QString("</body>\n</html>\n");
 
